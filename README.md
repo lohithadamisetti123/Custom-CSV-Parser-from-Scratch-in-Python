@@ -13,8 +13,7 @@ CSV looks simple, but handling quoted fields, commas inside data, escaped quotes
 
 
 
-
-###### **What This Project Does**
+**What This Project Does**
 
 
 
@@ -43,8 +42,7 @@ This project contains two main components:
 * Produces CSV files that can be read by standard CSV readers
 
 
-
-###### **Folder Structure**
+**Folder Structure**
 
 
 custom\_csv/
@@ -60,8 +58,7 @@ custom\_csv/
 ---
 
 
-
-###### **How the CSV Reader Works** 
+**How the CSV Reader Works** 
 
 
 
@@ -83,7 +80,7 @@ This logic is implemented using a simple state machine approach.
 
 
 
-###### **How the CSV Writer Works**
+**How the CSV Writer Works**
 
 
 
@@ -101,7 +98,7 @@ This logic is implemented using a simple state machine approach.
 
 
 
-###### **Setup Instructions**
+**Setup Instructions**
 
 
 
@@ -114,7 +111,7 @@ This logic is implemented using a simple state machine approach.
 
 
 
-###### **Usage Examples**
+**Usage Examples**
 
 
 Reading a CSV File
@@ -129,7 +126,7 @@ for row in reader:
 
 ###### 
 
-###### Writing a CSV File
+###### **Writing a CSV File**
 
 
 from custom\_csv\_writer import CustomCsvWriter
@@ -148,8 +145,7 @@ writer = CustomCsvWriter("output.csv")
 writer.write(data)
 
 
-
-###### **Testing**
+**Testing**
 
 
 
@@ -171,8 +167,7 @@ Round-trip testing was done by:
 3. Verifying that the output matches the original data
 
 
-
-###### **Benchmarking**
+**Benchmarking**
 
 
 
@@ -203,8 +198,7 @@ Writer Performance
 The writer performance is very close to the standard library because writing CSV is less complex than parsing it.
 
 
-
-###### **What I Learned From This Project**
+**What I Learned From This Project**
 
 
 
@@ -217,8 +211,7 @@ The writer performance is very close to the standard library because writing CSV
 
 
 
-
-###### **Limitations**
+**Limitations**
 
 
 
@@ -227,8 +220,7 @@ The writer performance is very close to the standard library because writing CSV
 * This implementation focuses on correctness and learning, not production use
 
 
-
-###### **Conclusion**
+**Conclusion**
 
 
 
