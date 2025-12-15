@@ -14,7 +14,7 @@ CSV looks simple, but handling quoted fields, commas inside data, escaped quotes
 
 
 **What This Project Does**
-
+---
 
 
 This project contains two main components:
@@ -43,7 +43,7 @@ This project contains two main components:
 
 
 **Folder Structure**
-
+---
 
 custom\_csv/
 │
@@ -60,7 +60,7 @@ custom\_csv/
 
 **How the CSV Reader Works** 
 
-
+---
 
 * The file is read character by character
 * A variable in\_quotes is used to track whether the parser is inside a quoted field
@@ -82,7 +82,7 @@ This logic is implemented using a simple state machine approach.
 
 **How the CSV Writer Works**
 
-
+---
 
 * Each field is converted to a string
 * A field is enclosed in double quotes if it contains:
@@ -99,7 +99,7 @@ This logic is implemented using a simple state machine approach.
 
 
 **Setup Instructions**
-
+---
 
 
 1. Make sure Python 3 is installed
@@ -112,10 +112,10 @@ This logic is implemented using a simple state machine approach.
 
 
 **Usage Examples**
-
+---
 
 Reading a CSV File
----
+
 
 
 from custom\_csv\_reader import CustomCsvReader
@@ -124,11 +124,11 @@ reader = CustomCsvReader("test.csv")
 for row in reader:
     print(row)
 
-###### 
+ 
 
-###### **Writing a CSV File**
+**Writing a CSV File**
 
-
+---
 from custom\_csv\_writer import CustomCsvWriter
 
 
@@ -146,7 +146,7 @@ writer.write(data)
 
 
 **Testing**
-
+---
 
 
 The reader and writer were tested using CSV files that include:
@@ -168,7 +168,7 @@ Round-trip testing was done by:
 
 
 **Benchmarking**
-
+---
 
 
 A benchmark was performed using a CSV file with 10,000 rows and 5 columns.
@@ -200,7 +200,7 @@ The writer performance is very close to the standard library because writing CSV
 
 **What I Learned From This Project**
 
-
+---
 
 * Why CSV parsing is harder than it looks
 * How quoted fields and escaped characters work
@@ -213,7 +213,7 @@ The writer performance is very close to the standard library because writing CSV
 
 **Limitations**
 
-
+---
 
 * The custom reader is slower than the built-in csv.reader
 * Error handling for malformed CSV files is minimal
@@ -221,7 +221,7 @@ The writer performance is very close to the standard library because writing CSV
 
 
 **Conclusion**
-
+---
 
 
 This project helped me understand CSV file handling at a much deeper level than using the built-in library. Implementing the reader and writer manually gave practical experience with file I/O, parsing logic, and performance benchmarking, which are important skills for data engineering.
