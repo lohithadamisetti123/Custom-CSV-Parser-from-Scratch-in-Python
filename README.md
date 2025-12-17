@@ -35,8 +35,8 @@ This project contains two main components:
 ## Folder Structure
 
 ```text
-custom_csv/
-│
+
+
 ├── custom_csv_reader.py
 ├── custom_csv_writer.py
 ├── generate_data.py
